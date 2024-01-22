@@ -1,0 +1,361 @@
+html {
+
+}
+
+body {
+    background-color: #101010;
+    font-family: Carlito;
+    color: white;
+}
+
+/* .............................. Header .............................. */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: -49vw;
+}
+
+header.index {
+    margin-bottom: 0vw;
+}
+
+.container-header-video {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    height: 42vw;
+}
+
+.header-bg-video {
+    width: 100%;
+    z-index: 0;
+
+    object-position: 0 -8vw;
+}
+
+.container-header-img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    overflow:hidden;
+    display:block;
+}
+
+.header-bg-img {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    object-position: -15vw 40%;
+    transform: scale(1.5);
+    z-index: 0;
+}
+
+.top-bar {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2vw;
+}
+
+.header-img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 20%;
+    margin-left: 2vw;
+    z-index: 10;
+}
+
+a.menu-btn {
+    position: absolute;
+    width: 13vw;
+    right: 4vw;
+    display: none;
+}
+
+img.menu-btn {
+    width: 100%;
+}
+
+nav {
+    grid-column: 2;
+    grid-row: 1;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    z-index: 20;
+
+    font-size: 1.3vw;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+
+/* .............................. Main .............................. */
+
+main {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 0;
+
+    font-size: 1vw;
+}
+
+/* ............... Hem ............... */
+
+p.break {
+    margin-top: 4rem;
+}
+
+/* ............... Om Oss ............... */
+
+.about-us-text {
+    margin: 0 auto;
+    width: 80%;
+}
+
+div.tobe {
+    width: 40%;
+    text-align: start;
+    margin: 5vw 0 0 0;
+}
+div.tobe img {
+    width: 100%;
+}
+div.tobe div {
+    width: 80%;
+}
+
+div.whole-jeep {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+div.jeep {
+    width: 40%;
+    text-align: start;
+    position: relative;
+    top: -15vw;
+    margin-bottom: -15vw;
+}
+div.jeep img {
+    width: 100%;
+}
+div.jeep div {
+    width: 80%;
+}
+
+/* ............... Portfolio ............... */
+
+div.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.video {
+    margin: 1vw;
+}
+
+div.iframe {
+    max-width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+div.iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.video h3 {
+    margin: 0.5vw 0 0 0;
+}
+
+/* ............... Priser ............... */
+
+div.prices-header {
+    margin: 4vw 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 8vw;
+}
+img.prices-header {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    height: 8vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 45%;
+}
+img.prices-header-photo {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    height: 8vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 33%;
+}
+img.prices-header-programming {
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    height: 8vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+h1.prices-header {
+    z-index: 10;
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+    text-shadow: black 3px 3px 5px;
+}
+
+div.prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+div.prices-div {
+    padding: 0 2vw;
+    margin: 2vw 0 0 0;
+}
+img.prices {
+    width: 5vw;
+}
+h3.prices {
+    margin: 5px 0;
+}
+h5.prices {
+    margin: 0;
+}
+
+div.prices-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+div.prices-div-2 {
+    padding: 0 4vw;
+    margin: 2vw 0 0 0;
+}
+
+/* ............... Kontakta Oss ............... */
+
+/* .............................. Footer .............................. */
+
+footer {
+    width: 60%;
+    margin: 5vw auto 2vw;
+    border-top-style: solid;
+    border-color: #333;
+    height: 4vw;
+    text-align: center;
+
+    font-size: 1vw;
+}
+
+footer p {
+    margin-top: 2vw;
+}
+
+/* .............................. Media .............................. */
+
+@media (orientation: portrait){
+
+    .top-bar {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .header-img {
+        grid-column: 1;
+        grid-row: 1;
+        width: 20%;
+        margin-left: 2vw;
+        margin-top: 2vw;
+    }
+
+    .top-bar {
+        padding-top: 1vh;
+    }
+
+    a.menu-btn {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    header nav {
+        font-size: 2.5vw;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        width: 50%;
+        height: 38vw;
+        left: 25%;
+        right: 25%;
+
+        flex-direction: column;
+        font-size: 5.8vw;
+    }
+
+    header a {
+        margin: 0.2vw auto;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    div.tobe {
+        margin: 5vw 0 0 2vw;
+    }
+
+    div.jeep {
+        margin: 0 2vw -15vw 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
